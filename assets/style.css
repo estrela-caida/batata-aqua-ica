@@ -42,7 +42,42 @@ body {
       }.cartao__conteudo__resposta p {
         color: var(--card-back-color);
         font-weight: 700;
-      }footer {
+      }
+      .cartao:hover .cartao__conteudo{
+        transform:rotateY(180deg);
+      }
+      .cartao__conteudo{ 
+        transform-style: preserve-3d;
+        transition: transform 300ms ease-in-out;
+      }
+      .cartao__conteudo h3 {
+        backface-visibility: hidden;
+      }
+      .cartao__conteudo__frente,
+      .cartao__conteudo__verso {
+        backface-visibility: hidden;
+      }.cartao__conteudo{ 
+        transform-style: preserve-3d;
+        transition: transform 300ms ease-in-out;
+      }
+      .cartao__conteudo__pergunta {
+        backface-visibility: hidden;
+      }
+      .cartao__conteudo__frente,
+      .cartao__conteudo__verso {
+        backface-visibility: hidden;
+      }.cartao__conteudo{ 
+        transform-style: preserve-3d;
+        transition: transform 300ms ease-in-out;
+      }
+      .cartao__conteudo__resposta {
+        backface-visibility: hidden;
+      }
+      .cartao__conteudo__frente,
+      .cartao__conteudo__verso {
+        backface-visibility: hidden;
+      }
+      footer {
         background-color: black;
         color: white;
         position: fixed;
