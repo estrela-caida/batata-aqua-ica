@@ -49,39 +49,19 @@ body {
       .cartao__conteudo__pergunta p {
         color: var(--text-color);
         font-weight: 500;
-      }.cartao__conteudo__resposta p {
+      }
+      .cartao__conteudo__resposta p {
         color: var(--card-back-color);
         font-weight: 700;
       }
       .cartao:hover .cartao__conteudo{
         transform:rotateY(180deg);
       }
-      .cartao__conteudo{ 
-        transform-style: preserve-3d;
-        transition: transform 300ms ease-in-out;
-      }
-      .cartao__conteudo h3 {
+      .cartao__conteudo__pergunta, .cartao__conteudo__resposta{ 
         backface-visibility: hidden;
-      }
-      .cartao__conteudo__frente,
-      .cartao__conteudo__verso {
-        backface-visibility: hidden;
-      }.cartao__conteudo{ 
-        transform-style: preserve-3d;
-        transition: transform 300ms ease-in-out;
-      }
-      .cartao__conteudo__pergunta {
-        backface-visibility: hidden;
-      }
-      .cartao__conteudo__frente,
-      .cartao__conteudo__verso {
-        backface-visibility: hidden;
-      }.cartao__conteudo{ 
-        transform-style: preserve-3d;
-        transition: transform 300ms ease-in-out;
-      }
-      .cartao__conteudo__resposta {
-        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
       }
       .cartao__conteudo__pergunta,
       .cartao__conteudo__resposta {
