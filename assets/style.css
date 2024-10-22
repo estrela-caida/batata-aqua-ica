@@ -73,10 +73,11 @@ body {
       .cartao__conteudo__resposta {
         backface-visibility: hidden;
       }
-      .cartao__conteudo__frente,
-      .cartao__conteudo__verso {
+      .cartao__conteudo__pergunta,
+      .cartao__conteudo__resposta {
         backface-visibility: hidden;
       }
+
       footer {
         background-color: black;
         color: white;
